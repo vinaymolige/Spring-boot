@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class TopicService {
-private  List<Topic> topics = new ArrayList<> (Arrays.asList(
+private  List<Topic> topics = new ArrayList<>(Arrays.asList (
         new Topic("java", "Spring framework","Discription"),
         new Topic("java","core java","java core"),
         new Topic("python","python","python course")
@@ -22,4 +22,14 @@ public Topic getTopic(String id){
     public void addTopic(Topic topic){
     topics.add(topic);
     }
-}
+
+    public void updateTopic(String id,Topic topic) {
+        for (int i =0; i < topics.size(); i++){
+            Topic t =  topics.get(i);
+            if (t.getId().equals(id))
+                topics.set(i,topic);
+            }
+        }
+
+    }
+
