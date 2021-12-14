@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class TopicService {
-private  List<Topic> topics =new ArrayList<> (Arrays.asList(
+private  List<Topic> topics = new ArrayList<> (Arrays.asList(
         new Topic("java", "Spring framework","Discription"),
         new Topic("java","core java","java core"),
         new Topic("python","python","python course")
