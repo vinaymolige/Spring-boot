@@ -28,8 +28,8 @@ public Topic getTopic(String id){
             Topic t =  topics.get(i);
             if (t.getId().equals(id)){
                 topics.set(i,topic);
-            return;
             }
+            return;
             }
         }
 
